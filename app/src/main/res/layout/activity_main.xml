@@ -1,26 +1,280 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:rowCount="7"
+    android:columnCount="4"
     tools:context=".MainActivity">
-    <include
-        layout="@layout/input_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:gravity="bottom"
+
+    <TextView
+        android:id="@+id/tvInput"
+        android:textColor="@color/white"
         android:background="@color/darkgreen"
-        android:layout_height="match_parent">
+        android:fontFamily="@font/g_light"
+        android:maxLength="23"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:gravity="end"
+        android:textSize="30dp"/>
 
-        <include
-            layout="@layout/buttons"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvOutput"
+        android:textColor="@color/white"
+        android:background="@color/darkgreen"
+        android:fontFamily="@font/g_light"
+        android:maxLength="20"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:gravity="end"
+        android:textSize="70dp"/>
 
-</LinearLayout>
+    <Button
+        android:id="@+id/btnClear"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/ash"
+        android:fontFamily="@font/g_light"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:text="AC"/>
+
+    <Button
+        android:id="@+id/btnBackspace"
+        android:textColor="@color/white"
+        android:background="@color/ash"
+        android:fontFamily="@font/g_light"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:text="⌫"/>
+
+    <Button
+        android:id="@+id/btnPercent"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/ash"
+        android:fontFamily="@font/g_light"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_row="2"
+        android:layout_column="2"
+        android:text="%"/>
+
+    <Button
+        android:id="@+id/btnDivision"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/ash"
+        android:fontFamily="@font/g_light"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_row="2"
+        android:layout_column="3"
+        android:text="/"/>
+
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="@color/darkgreen"
+        android:text="7"
+        android:textColor="@color/white"
+        android:fontFamily="@font/g_light"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/btn8"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/darkgreen"
+        android:fontFamily="@font/g_light"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:text="8"/>
+
+    <Button
+        android:id="@+id/btn9"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/darkgreen"
+        android:fontFamily="@font/g_light"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_row="3"
+        android:layout_column="2"
+        android:text="9"/>
+
+    <Button
+        android:id="@+id/btnMultiply"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/ash"
+        android:fontFamily="@font/g_light"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_row="3"
+        android:layout_column="3"
+        android:text="X"/>
+
+    <Button
+        android:id="@+id/btn4"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/darkgreen"
+        android:fontFamily="@font/g_light"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:text="4"/>
+
+    <Button
+        android:id="@+id/btn5"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/darkgreen"
+        android:fontFamily="@font/g_light"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:text="5"/>
+
+    <Button
+        android:id="@+id/btn6"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/darkgreen"
+        android:fontFamily="@font/g_light"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_row="4"
+        android:layout_column="2"
+        android:text="6"/>
+
+    <Button
+        android:id="@+id/btnMinus"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/ash"
+        android:fontFamily="@font/g_light"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_row="4"
+        android:layout_column="3"
+        android:text="-"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/darkgreen"
+        android:fontFamily="@font/g_light"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:text="1"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/darkgreen"
+        android:fontFamily="@font/g_light"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_row="5"
+        android:layout_column="1"
+        android:text="2"/>
+
+    <Button
+        android:id="@+id/btn3"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/darkgreen"
+        android:fontFamily="@font/g_light"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_row="5"
+        android:layout_column="2"
+        android:text="3"/>
+
+
+    <Button
+        android:id="@+id/btnPlus"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/ash"
+        android:fontFamily="@font/g_light"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_row="5"
+        android:layout_column="3"
+        android:text="+"/>
+
+    <Button
+        android:id="@+id/btn0"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/darkgreen"
+        android:fontFamily="@font/g_light"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:text="0"/>
+
+    <Button
+        android:id="@+id/btnDot"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/darkgreen"
+        android:fontFamily="@font/g_light"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_row="6"
+        android:layout_column="1"
+        android:text="."/>
+
+    <Button
+        android:id="@+id/btnBracket"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/darkgreen"
+        android:fontFamily="@font/g_light"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_row="6"
+        android:layout_column="2"
+        android:text="(    )"/>
+
+    <Button
+        android:id="@+id/btnEqual"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/textgreen"
+        android:fontFamily="@font/g_light"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_row="6"
+        android:layout_column="3"
+        android:text="="/>
+
+</GridLayout>

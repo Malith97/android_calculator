@@ -10,8 +10,8 @@ Supports simple operations such as additon,multiplication,division,subtraction.
 
 ## IMAGES 
 
-![Image1](screenshots/Screenshot_2.png)
-![Image2](screenshots/Screenshot_3.png)
+![Image1](screenshots/Screenshot_1.png)
+![Image2](screenshots/Screenshot_2.png)
 
 ## LICENSE
 
