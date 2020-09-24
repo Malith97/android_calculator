@@ -15,4 +15,4 @@ Supports simple operations such as additon,multiplication,division,subtraction
 
 ## LICENSE
 
-MIT License, feel free to use the code as you please
+MIT License, feel free to use the code as you please.
