@@ -1,6 +1,6 @@
 ## CALCULATOR 
 
-A simple Android calculator app built with Java.
+A simple Android calculator app built with Java
 
 ## INFO
 
